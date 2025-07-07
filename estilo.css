@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', 'Roboto', sans-serif; /* fonte */
+    padding: 0;
+    background-image: url('bg.png'); /* fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white; /* cor texto */
+}
+
+header, nav, section, footer {
+    color: white; /* cor texto */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* fundo escuro */
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); /* fundo nav */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white; /* link branco */
+    padding: 10px 20px;
+    text-decoration: none; /* sem sublinhado */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* hover */
+}
+
+a {
+    color: white; /* link branco */
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s; /* transição */
+}
+
+a:hover {
+    text-decoration: underline; /* sublinhado hover */
+    color: #ddd; /* cor hover */
+}
+
+a:visited {
+    color: #cccccc; /* link visitado */
+}
+
+section {
+    padding: 20px;
+    display: none; /* esconde */
+    background-color: rgba(0, 0, 0, 0.5); /* fundo */
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+section.active {
+    display: block; /* mostra ativo */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* colunas */
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px; /* bordas arredondadas */
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #333; /* botão escuro */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555; /* hover botão */
+}

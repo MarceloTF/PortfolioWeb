@@ -1,5 +1,55 @@
-<html>
-  <h1>
-    Teste
-  </h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- estrutura principal -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEB</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- link do css -->
+</head>
+<body>
+    <header>
+        <h1>PORTFOLIO WEB</h1> <!-- título -->
+    </header>
+    <nav>
+        <!-- menu de navegação -->
+        <a href="#" onclick="mostrar('sobre')">Sobre Mim</a>
+        <a href="#" onclick="mostrar('formacao')">Formação</a>
+        <a href="#" onclick="mostrar('portfolio')">Portfólio</a>
+        <a href="#" onclick="mostrar('contato')">Contato</a>
+    </nav>
+    <section id="sobre" class="active">
+        <!-- seção sobre mim -->
+        <h2>Sobre Mim</h2>
+        <p>Meu nome é Marcelo Freixo, eu sou Analista de Suporte de TI, tenho 42 anos e trabalho desde os 18 anos na área de TI em geral, suporte técnico, server manager, entre outras funções, atualmente estudo Análise e Desenvolvimento de Sistemas na UNINTER.</p>
+    </section>
+    <section id="formacao">
+        <!-- seção formação -->
+        <h2>Formação Educacional</h2>
+        <p>Minha jornada acadêmica é guiada pela busca constante de crescimento e excelência na área de tecnologia. Atualmente, curso Análise e Desenvolvimento de Sistemas na UNINTER, fortalecendo minha base de conhecimentos para atuar de forma ainda mais estratégica em TI. Ao longo dos anos, participei de diversos cursos e capacitações na área de administração de servidores, redes e suporte técnico, consolidando habilidades essenciais para atender às demandas do mercado.</p>
+        <p>Sou fluente em Português (nativo) e possuo Inglês em nível avançado, permitindo acompanhar tendências e evoluções do setor de forma contínua.</p>
+        <p>Tenho experiência básica em programação utilizando linguagens como Python, C e C++, onde desenvolvi pequenos projetos e exercícios voltados para lógica, automação e resolução de problemas práticos. Estou sempre buscando aprimorar essas habilidades para evoluir continuamente como profissional na área de tecnologia.</p>
+    </section>
+    <section id="portfolio">
+        <!-- seção portfólio -->
+        <h2>Portfólio</h2>
+        <ul>
+            <li><a href="https://github.com/MarceloTF/Generatura" target="_blank">Generatura - Gerador de assinaturas de e-mail</a></li>
+            <li><a href="https://github.com/MarceloTF/devweb" target="_blank">Repositório desse portfólio</a></li>
+            <li><a href="Trabalho_LPA.pdf" target="_blank">Trabalho de Lógica de Programação e Algoritmos</a></li>
+            <li><a href="Trabalho_BD.pdf" target="_blank">Trabalho de Banco de Dados</a></li>
+        </ul>
+    </section>
+    <section id="contato">
+        <!-- seção contato -->
+        <h2>Contato</h2>
+        <form action="mailto:marcelotf@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Nome" required> <!-- campo nome -->
+            <input type="email" name="email" placeholder="Email" required> <!-- campo email -->
+            <textarea name="message" placeholder="Mensagem" rows="5" required></textarea> <!-- campo mensagem -->
+            <input type="submit" value="Enviar"> <!-- botão enviar -->
+        </form>
+    </section>
+    <script src="script.js"></script> <!-- script js -->
+</body>
 </html>
